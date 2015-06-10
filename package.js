@@ -1,6 +1,6 @@
 Package.describe({
   name: 'selaias:accounts-wepay',
-  version: '0.1.0',
+  version: '0.2.0',
   summary: 'Login service for WePay accounts',
   git: 'https://github.com/selaias/accounts-wepay.git',
   documentation: 'README.md'
@@ -13,7 +13,7 @@ Package.onUse(function(api) {
   api.imply('accounts-base', ['client', 'server']);
   api.use('accounts-oauth', ['client', 'server']);
   
-  api.use('selaias:oauth-wepay@0.1.0', ['client', 'server']);
+  api.use('selaias:oauth-wepay@0.2.0', ['client', 'server']);
 
   api.addFiles("wepay.js");
 
